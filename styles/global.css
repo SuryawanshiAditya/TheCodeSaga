@@ -1,0 +1,66 @@
+html {
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+@media only screen and (max-width: 1300px) {
+  html::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: aqua;
+  border-radius: 15px;
+}
+
+html::-webkit-scrollbar-track {
+  background: red;
+}
+
+body {
+  height: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 100;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.5) url("../assets/images/bg.svg");
+  background-position: right;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

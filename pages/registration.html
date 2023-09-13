@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Saga</title>
+
+    <!-- styles  -->
+    <link rel="stylesheet" href="../styles/registration.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/utils.css">
+
+    <!-- scripts -->
+    <script src="../scripts/handle_payment.js" defer></script>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <header>
+        <nav>
+            <div class="brand">
+                <img src="../assets/logo/TheCodeSaga_WithoutGlow.svg" alt="The Code Saga">
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="schedule.html">SCHEDULE</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="saga.html">SAGA</a></li>
+                    <li><a href="registration.html">RESULTS</a></li>
+                </ul>
+            </div>
+            <div class="cta">
+                <a href="registration.html">
+                    <button>Register</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="register-container">
+        <div class="register-card">
+            <h3>Registration Form</h3>
+            <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSf4H3lAKsj_fXSzgDWkT4f15-ZtOrsCFwkoyjb-aEMPQfGY9Q/formResponce">
+                <input type="text" id="name" name="entry.1928113808" placeholder="Name" required />
+
+                <input type="email" id="email" name="entry.2111830860" placeholder="Email" required />
+
+                <input type="tel" id="contact" name="entry.1769031187" placeholder="Contact no" required />
+
+                <input type="text" id="college" name="entry.1901079684" placeholder="College Name"
+                    required />
+
+                <select id="branch" name="entry.837246006">
+                    <option value="cm" selected>Branch</option>
+                    <option value="cm">Computer Science</option>
+                    <option value="if">Information Technology</option>
+                    <option value="e&tc">Electronics & Telecommunication</option>
+                    <option value="electrical">Electrical</option>
+                    <option value="civil">Civil</option>
+                    <option value="mechanical">Mechanical</option>
+                    <option value="mechanical">Others</option>
+                </select>
+
+                <select id="Year" name="entry.837246006">
+                    <option value="cm" selected>Year</option>
+                    <option value="cm">First Year</option>
+                    <option value="if">Second Year</option>
+                    <option value="e&tc">Third Year</option>
+                </select>
+
+
+                <label for="payment" id="payment">Your Preffered payment method ?</label>
+                <input type="radio" id="online" name="entry.877435027" value="online" required />
+                <label for="online" id="a">UPI</label>
+                <input type="radio" id="offline" name="entry.877435027" value="offline" required />
+                <label for="offline" id="b">Cash (Spot Entry)</label>
+
+                <div id="online-payment" style="display: none">
+                    <img src="../assets/images/qr.jpg" alt="QR code" width="400px" height="400px">
+                </div>
+
+                <label for="participation" id="participate">How you will be participating ?</label>
+                <input type="radio" id="one" name="entry.630845017" value="one" required />
+                <label for="one" id="c">Individual</label>
+                <input type="radio" id="two" name="entry.630845017" value="two" required />
+                <label for="two" id="d">Team (max 2 members)</label>
+
+                <input type="text" id="teamcode" name="entry.241959471" placeholder="Team Code" required />
+
+                <input type="text" id="teamcode" name="entry.241959471"
+                    placeholder="What is your Preferred Programming Language?" required />
+
+              
+
+                <input type="submit" value="Submit" id="submit" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

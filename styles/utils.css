@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap");
+
+:root {
+  /* colors  */
+  --primary-clr: #423d9e;
+  --secondary-clr: #2cb685;
+  --tertiary-clr: #b55cb5;
+  --primary-clr-700: #0e1120;
+  --text-clr-primary: white;
+  --text-clr-primary-glow: 1px 1px 15px rgba(255, 255, 255, 0.5);
+  --text-clr-secondary-glow: 1px 1px 15px rgba(44, 182, 133, 0.5);
+  --text-clr-tertiary-glow: 1px 1px 15px rgb(181, 92, 181, 0.5);
+
+  /* fonts  */
+  --primary-font: "Aldrich", sans-serif;
+  --secondary-font: "Alegreya Sans SC", sans-serif;
+  --tertiary-font: "Rubik", sans-serif;
+}

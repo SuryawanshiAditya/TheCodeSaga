@@ -1,0 +1,97 @@
+{
+    "events": {
+        "event_1": {
+            "name": "name of the event or competition",
+            "description": "desc",
+            "contact_person": {
+                "name": "name of contact person",
+                "contact_number": 123567890,
+                "email": "email@email.com"
+            },
+            "participation_fees": "amount/nil",
+            "sponsors": [],
+            "schedule": {
+                "start_time": "time",
+                "end_time": "time"
+            },
+            "rounds": {
+                "round_1": {
+                    "round_name": "name of the round",
+                    "description": "desc",
+                    "contact_person": {
+                        "name": "name of contact person",
+                        "contact_number": 123567890,
+                        "email": "email@email.com"
+                    },
+                    "schedule": {
+                        "start_time": "time",
+                        "end_time": "time"
+                    },
+                    "selection_criteria": {},
+                    "qualified_participants": {
+                        "participant_1": {
+                            "name": "",
+                            "photo_url": "",
+                            "score": "",
+                            "rank": ""
+                        },
+                        "participant_n": {
+                            "name": "",
+                            "photo_url": "",
+                            "score": "",
+                            "rank": ""
+                        }
+                    }
+                },
+                "round_n": {
+                    "round_name": "name of the round",
+                    "description": "desc",
+                    "contact_person": {
+                        "name": "name of contact person",
+                        "contact_number": 123567890,
+                        "email": "email@email.com"
+                    },
+                    "schedule": {
+                        "start_time": "time",
+                        "end_time": "time"
+                    },
+                    "selection_criteria": {},
+                    "winners": {
+                        "winner_1": {
+                            "name": "",
+                            "photo_url": "",
+                            "score": "",
+                            "rank": ""
+                        },
+                        "winner_n": {
+                            "name": "",
+                            "photo_url": "",
+                            "score": "",
+                            "rank": ""
+                        }
+                    }
+                }
+            },
+            "prize": "amount"
+        }
+    },
+    "participants": {
+        "participant_1": {},
+        "participant_2": {},
+        "participant_n": {}
+    },
+    "FAQ": {
+        "FAQ_1": {
+            "question": "",
+            "answer": ""
+        },
+        "FAQ_2": {
+            "question": "",
+            "answer": ""
+        },
+        "FAQ_n": {
+            "question": "",
+            "answer": ""
+        }
+    }
+}
