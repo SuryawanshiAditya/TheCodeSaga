@@ -46,6 +46,25 @@
   place-items: center;
 }
 
+/* 300  */
+@media only screen and (max-width: 735px) {
+  .formContentContainer .generalInfo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  input,
+  select {
+    width: 15rem;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    caret-color: var(--primary-clr);
+    border: none;
+  }
+}
+
 .formContentContainer .teamName span {
   display: block;
   margin-top: 0.5rem;
