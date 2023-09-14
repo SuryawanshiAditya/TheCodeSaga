@@ -12,6 +12,7 @@
   --text-clr-primary-glow: 1px 1px 15px rgba(255, 255, 255, 0.5);
   --text-clr-secondary-glow: 1px 1px 15px rgba(44, 182, 133, 0.5);
   --text-clr-tertiary-glow: 1px 1px 15px rgb(181, 92, 181, 0.5);
+  --btn-clr: #2c9db6;
 
   /* fonts  */
   --primary-font: "Aldrich", sans-serif;

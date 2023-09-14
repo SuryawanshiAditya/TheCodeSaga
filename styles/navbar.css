@@ -8,7 +8,162 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}header {
+  background: var(--primary-clr);
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+nav {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .brand img {
+  width: 3rem;
+}
+
+nav .navLinks ul li {
+  display: inline-block;
+  font-weight: 800;
+  color: white;
+  font-family: var(--secondary-font);
+  transition: 0.3s ease;
+}
+
+nav .navLinks ul li:hover {
+  color: var(--secondary-clr);
+  text-shadow: 1px 1px 15px var(--secondary-clr);
+}
+
+nav .navLinks ul li {
+  margin-inline: 2rem;
+}
+
+nav .cta button {
+  background: var(--secondary-clr);
+  color: white;
+  border-radius: 50px;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  transition: 0.3s ease;
+  font-weight: 700;
+}
+
+nav .cta button:hover {
+  box-shadow: 1px 1px 15px var(--secondary-clr);
+}
+
+nav .menuIconContainer {
+  display: none;
+  position: relative;
+}
+
+nav .menuIconContainer img {
+  width: 3rem;
+  filter: invert(1);
+}
+
+nav .menuIconContainer .menuCloseIconWrapper {
+  position: absolute;
+  top: 0;
+}
+
+nav #menu-logo {
+  display: none;
+  font-size: 2rem;
+}
+
+#res-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  width: 40%;
+  height: 32vh;
+  background-color: var(--primary-clr);
+  font-family: var(--secondary-font);
+  border-radius: 10px;
+  z-index: 3;
+  display: none;
+}
+
+#res-menu.active {
+  display: block;
+}
+
+#res-menu ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#res-menu ul li {
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+#res-menu ul li a {
+  color: var(--text-clr-primary);
+}
+
+#res-menu ul li a:hover {
+  font-weight: 600;
+  color: var(--secondary-clr);
+  text-shadow: var(--secondary-clr) 1px 0 10px;
+}
+
+#res-menu ul li a button {
+  width: 90%;
+  background-color: var(--btn-clr);
+  color: var(--text-clr-primary);
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 865px) {
+  #menu-logo {
+    display: block;
+    font-size: 2rem;
+  }
+
+  #res-menu {
+    display: block;
+  }
+
+
+  #res-menu.active {
+    display: none;
+  }
+
+  nav .menuIconContainer {
+    display: block;
+  }
+
+  nav .navLinks,
+  .cta {
+    display: none;
+  }
+
+  header {
+    height: 8vh;
+  }
+}
+
 
 nav {
   width: 95%;
