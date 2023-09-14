@@ -144,3 +144,123 @@ label {
   margin-bottom: 1rem;
   font-weight: 700;
 }
+
+
+.upi-input-style {
+	border: none;
+	padding: 8px;
+	padding-right: 52px;
+	background-color: #3498db;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.upi-input-style::-webkit-file-upload-button {
+	visibility: hidden;
+	display: none;
+}
+
+.upi-input-style::before {
+	content: "Choose a file";
+	display: inline-block;
+	background-color: #3498db;
+	color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #3498db;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.upi-input-style:hover::before {
+	background-color: #2672b9;
+}
+
+@media only screen and (max-width: 920px) {
+	.formContentContainer .generalInfo {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.method input,
+	.payment input {
+		width: 25rem;
+	}
+}
+
+@media only screen and (min-width: 650px) {
+	input,
+	select {
+		width: 25rem;
+		padding: 1rem 1rem;
+		border-radius: 5px;
+		outline: none;
+		caret-color: var(--primary-clr);
+		border: none;
+	}
+	input[type="radio"] {
+		width: 1rem;
+		height: 1rem;
+	}
+	.method input,
+	.payment input {
+		width: 4rem;
+	}
+}
+@media only screen and (max-width: 551px) {
+	.formContentContainer input {
+		width: 15rem;
+	}
+	.formTitle h1 {
+		font-size: 1.5rem;
+	}
+	input[type="radio"] {
+		width: 1rem;
+		height: 1rem;
+	}
+	select {
+		width: 17rem;
+	}
+	.submit input {
+		width: 20rem;
+	}
+}
+@media only screen and (max-width: 660px) {
+	.method input,
+	.payment input {
+		width: 4rem;
+	}
+	input[type="radio"] {
+		width: 1rem;
+		height: 1rem;
+	}
+	.upiQRContainer {
+		width: 90%;
+	}
+	.preference,
+	.payment {
+		padding-left: 31px;
+		padding-right: 10px;
+	}
+	hr {
+		width: 90%;
+		margin: 2rem auto;
+	}
+}
+@media only screen and (max-width: 378px) {
+	input[type="radio"] {
+		width: 1rem;
+		height: 1rem;
+	}
+	.preference,
+	.payment {
+		padding-left: 45px;
+		padding-right: 35px;
+	}
+	.formContentContainer .upiQRContainer img {
+		width: 14rem;
+	}
+	hr {
+		width: 75%;
+		margin: 2rem auto;
+	}
+}
