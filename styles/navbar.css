@@ -46,6 +46,7 @@ nav .cta button {
   padding-block: 0.5rem;
   transition: 0.3s ease;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 nav .cta button:hover {
