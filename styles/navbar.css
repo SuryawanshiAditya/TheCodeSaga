@@ -54,11 +54,17 @@ nav .cta button:hover {
 
 nav .menuIconContainer {
   display: none;
+  position: relative;
 }
 
 nav .menuIconContainer img {
   width: 3rem;
   filter: invert(1);
+}
+
+nav .menuIconContainer .menuCloseIconWrapper {
+  position: absolute;
+  top: 0;
 }
 
 @media only screen and (max-width: 865px) {
