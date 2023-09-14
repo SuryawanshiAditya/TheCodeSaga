@@ -21,9 +21,11 @@
   <!-- navbar  -->
   <header>
     <nav>
-
       <div class="brand">
-        <img src="../assets/logo/TheCodeSaga_WithoutGlow.svg" alt="The Code Saga">
+        <img
+          src="../assets/logo/TheCodeSaga_WithoutGlow.svg"
+          alt="The Code Saga"
+        />
       </div>
 
       <div class="navLinks">
@@ -42,16 +44,31 @@
         </a>
       </div>
 
-      <div class="menuIconContainer">
+      <a id="menuIconContainer" class="menuIconContainer">
         <div class="menuOpenIconWrapper">
-          <img src="../assets/icons/menu-outline.svg" alt="MenuIcon">
+          <img src="../assets/icons/menu-outline.svg" alt="MenuIcon" />
         </div>
-        <div class="menuCloseIconWrapper">
+        <div class="menuCloseIconWrapper" style="display: none">
+          <img src="../assets/icons/close-outline.svg" alt="CloseIcon" />
         </div>
-      </div>
-
+      </a>
     </nav>
   </header>
+
+  <div id="res-menu">
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="schedule.html">SCHEDULE</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="saga.html">SAGA</a></li>
+      <li><a href="registration.html">RESULTS</a></li>
+      <li>
+        <a href="registration.html">
+          <button>Register</button>
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <div id="root">
 
@@ -141,7 +158,7 @@
               </div>
 
               <div class="CashRegistrationIDContainer" style="display: none;">
-                <h1 id="rid">ID Yeil Ithe</h1>
+                <h1>ID Yeil Ithe</h1>
                 <span>Note: Share this Registration ID with the volunteer when appeared for spot entry</span>
               </div>
 
@@ -162,6 +179,15 @@
   </div>
 
   </div>
+  <script>
+    const menu2 = document.getElementById("menuIconContainer");
+    const headerul = document.getElementById("res-menu");
+
+    menu2.addEventListener("click", () => {
+      menu2.classList.toggle("active");
+      headerul.classList.toggle("active");
+    });
+  </script>
 </body>
 
 </html>
