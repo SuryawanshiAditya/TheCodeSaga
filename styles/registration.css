@@ -46,6 +46,11 @@
   place-items: center;
 }
 
+.CashRegistrationIDContainer {
+  color: white;
+}
+
+
 /* 300  */
 @media only screen and (max-width: 735px) {
   .formContentContainer .generalInfo {
@@ -54,6 +59,7 @@
 }
 
 @media only screen and (min-width: 650px) {
+
   input,
   select {
     width: 15rem;
@@ -129,6 +135,7 @@ select {
 select {
   width: 27rem;
 }
+
 label {
   display: block;
   color: var(--text-clr-primary);
