@@ -6,5 +6,5 @@ cd ../
 
 git add .
 git commit -m "update participant entries"
-git push origim main
+git push origin main
  
