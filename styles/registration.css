@@ -176,7 +176,16 @@ label {
 .upi-input-style:hover::before {
 	background-color: #2672b9;
 }
-
+@media only screen and (max-width: 1032px) {
+	.formContentContainer input,
+	select {
+		width: 17rem;
+	}
+	.formContentContainer {
+		padding-left: 67px;
+		padding-right: 67px;
+	}
+}
 @media only screen and (max-width: 920px) {
 	.formContentContainer .generalInfo {
 		grid-template-columns: repeat(1, 1fr);
@@ -190,7 +199,7 @@ label {
 @media only screen and (min-width: 650px) {
 	input,
 	select {
-		width: 25rem;
+		width: 19rem;
 		padding: 1rem 1rem;
 		border-radius: 5px;
 		outline: none;
@@ -222,6 +231,10 @@ label {
 	}
 	.submit input {
 		width: 20rem;
+	}
+	.formContentContainer .upiQRContainer span,
+	label {
+		text-align: left;
 	}
 }
 @media only screen and (max-width: 660px) {
